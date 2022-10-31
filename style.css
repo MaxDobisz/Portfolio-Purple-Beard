@@ -1,3 +1,42 @@
-body {
-    background-color: blue;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* hero section start */
+.hero {
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1511649475669-e288648b2339?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 50%;
+    justify-content: center;
+}
+
+.hero__title {
+    font-size: 3rem;
+    
+}
+
+.hero__text {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.hero__button {
+    font-size: 2rem;
+    background-color: rgba(245, 245, 220, 0.1);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.2em 0.5em;
+    
 }
