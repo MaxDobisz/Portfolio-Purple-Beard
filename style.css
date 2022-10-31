@@ -1,7 +1,7 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body, html {
@@ -24,7 +24,6 @@ body, html {
 
 .hero__title {
     font-size: 3rem;
-    
 }
 
 .hero__text {
@@ -33,10 +32,25 @@ body, html {
 }
 
 .hero__button {
-    font-size: 2rem;
     background-color: rgba(245, 245, 220, 0.1);
-    border: 1px solid black;
     border-radius: 10px;
+    border: 1px solid black;
+    font-size: 2rem;
     padding: 0.2em 0.5em;
-    
+}
+
+
+/* MQ TABLET START */
+@media (min-width: 600px) {
+    body {
+        background-color: pink;
+    }
+}
+/* MQ TABLET ENDS */
+
+
+
+/* MQ LAPTOP START */
+@media (min-width: 992px) {
+
 }
