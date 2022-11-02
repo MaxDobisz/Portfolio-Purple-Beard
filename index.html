@@ -5,55 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Maciej Max Dobisz</title>
+    <script src="https://kit.fontawesome.com/f9eca1f817.js" crossorigin="anonymous"></script>
+    <title>Max Dobisz</title>
 </head>
 <body>
-
   <!-- Hero start -->
     <header class="hero">
       <h1 class="hero__title">Hi, I'm Max</h1>
       <p class="hero__text">I'm Front-End Developer from Cambridge</p>
       <button class="hero__button">Contact Me</button>
+      <aside class="hero__icons">
+        <i class="fab fa-brands fa-github icon__github"></i>
+        <i class="fab fa-brands fa-linkedin icon__linkedin"></i>
+      </aside>
     </header>
   <!-- Hero end -->
-
   <!-- About me start -->
-      <aside>
-        <h2>ABOUT ME</h2>
-        <p>I'm a Front End Developer from Cambridge, UK.I have experience in responsive CSS, JavaScript and React and have just finished a bootcamp with Purple Beard.</p>
+      <aside class="about-me">
+        <div class="about-me__content-wrapper">
+          <h2 class="about-me__title">ABOUT ME</h2>
+          <p>I'm a Front End Developer from Cambridge, UK.I have experience in responsive CSS, JavaScript and React and have just finished a bootcamp with Purple Beard.</p>
+        </div>
       </aside>
   <!-- About me end -->
-  
   <!-- Projects start -->
-      <main>
-        <section>
-          <article>Project 1</article>
-          <article>Project 2</article>
-          <article>Project 3</article>
+      <main class="main-content">
+        <h2 class="portfolio__title">Portfolio</h2>
+        <section class="portfolio">
+          <article class="portfolio__project">
+            <header class="project__image project__image--1"></header>
+            <main class="project__details">
+              <h3 class="project__title">Project Title 1</h3>
+              <ul>
+                <li>Live Website Link</li>
+                <li>Github Link:</li>
+                <li>Technologies used CSS, JavaScript</li>
+                <li>Summary: An API app</li>
+              </ul>
+            </main>
+          </article>
+          <article class="portfolio__project">
+            <header class="project__image project__image--2"></header>
+            <main class="project__details">
+              <h3 class="project__title">Project Title 2</h3>
+              <ul>
+                <li>Live Website Link</li>
+                <li>Github Link:</li>
+                <li>Technologies used:</li>
+                <li>Summary: A CRUD app</li>
+              </ul>
+            </main>
+          </article>
+          <article class="portfolio__project">
+            <header class="project__image project__image--3"></header>
+            <main class="project__details">
+              <h3 class="project__title">Project Title 3</h3>
+              <ul>
+                <li>Live Website Link</li>
+                <li>Github Link:</li>
+                <li>Technologies used: CSS, JavaScript, React</li>
+                <li>Summary: A React app</li>
+              </ul>
+            </main>
+          </article>
         </section>
       </main>
   <!-- Projects end -->
-
   <!-- Get in touch start -->
-      <section>
-        <h2>Get in Touch</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur soluta obcaecati animi quos fugit, dicta cupiditate, est, incidunt dolorum voluptatem ad illo sed. Eligendi, eius rem. Nostrum voluptatum libero alias!</p>
-        <i>linkedin</i>
-        <i>github</i>
-        <h3>Send a message</h2>
-          <form>
-            <input type="text">
-            <input type="text">
-            <input type="email">
-            <input type="text">
-            <input type="submit" value="">
-          </form>
+      <section class="get-in-touch">
+        <h2 class="get-in-touch__title">Get in Touch</h2>
+        <p class="get-in-touch__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur soluta obcaecati animi quos fugit, dicta cupiditate, est, incidunt dolorum voluptatem ad illo sed. Eligendi, eius rem. Nostrum voluptatum libero alias!</p>
+        <div class="get-in-touch__content">
+          <div class="get-in-touch__icons-wrapper">
+            <div class="get-in-touch__icon-wrapper">
+              <i class="fab fa-brands fa-linkedin get-in-touch__icon"></i>
+              <p>Maciej Dobisz</p>
+            </div>
+            <div class="get-in-touch__icon-wrapper">
+              <i class="fab fa-brands fa-github get-in-touch__icon"></i>
+              <p>Github</p>
+            </div>
+          </div>
+          <h3 class="form__title">Send a message</h2>
+            <form class="get-in-touch__form">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name">
+              <label for="sourname">Sourname</label>
+              <input type="text" id="sourname">
+              <label for="email">Email</label>
+              <input type="email" id="email">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+              <input class="form__button" type="submit" value="Send a message">
+            </form>
+        </div>
       </section>
-  <!-- Get in touch ends -->
-
-    <footer>
-      &copy; Copyright Maciej Max Dobisz 2022
+  <!-- Get in touch end -->
+    <footer class="footer">
+      <p class="footer__text">&copy; Copyright Maciej Max Dobisz 2022</p>
     </footer>
-
 </body>
 </html>

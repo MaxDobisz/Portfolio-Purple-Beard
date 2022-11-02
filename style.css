@@ -2,10 +2,22 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 body, html {
-    height: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    color: white;
+}
+
+input {
+    border-radius: 4px;
+    font-size: 1.5rem;
+}
+
+.hero, .about-me, .main-content, .get-in-touch, .footer {
+    padding: 2rem;
 }
 
 /* hero section start */
@@ -18,8 +30,24 @@ body, html {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    height: 50%;
     justify-content: center;
+    padding-top: 5rem;
+    position: relative;
+    color: black;
+}
+
+.icon__github {
+    font-size: 2.5rem;
+    position: absolute;
+    right: 4.5rem;
+    top: 1rem;
+}
+
+.icon__linkedin {
+    font-size: 2.5rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
 }
 
 .hero__title {
@@ -32,25 +60,168 @@ body, html {
 }
 
 .hero__button {
-    background-color: rgba(245, 245, 220, 0.1);
+    background-color: transparent;
     border-radius: 10px;
     border: 1px solid black;
+    box-shadow: 0 0 2px;
     font-size: 2rem;
     padding: 0.2em 0.5em;
 }
+/* hero section end */
 
+/* about me section start */
+.about-me {
+    margin: 0 auto;
+    background-color: rgb(233, 233, 233);
+    color: black;
+}
+
+.about-me__title {
+    margin-bottom: 1rem;
+}
+/* about me section end */
+
+/* main-content start */
+.main-content {
+    background-color: black;
+}
+/* main-content end */
+
+/* porftolio section start */
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio__project {
+    flex-basis: 100%;
+    gap: 1rem;
+    height: 300px;
+    margin: 1rem 0;
+}
+
+.project__image {
+    height: 150px;
+}
+
+.project__details {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    padding: 1rem;
+}
+
+.project__title {
+    margin-bottom: 1rem;
+}
+
+.project__title {
+    text-align: center;
+}
+
+.project__image--1 {
+    background-color: blueviolet;
+}
+
+.project__image--2 {
+    background-color: rgb(24, 107, 27);
+}
+
+.project__image--3 {
+    background-color: rgb(35, 105, 190);
+}
+/* porftolio section end  */
+
+/* get-in-touch section start */
+.get-in-touch {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.get-in-touch__title {
+    font-size: 2rem;
+}
+
+.get-in-touch__icon-wrapper {
+    align-items: flex-end;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.get-in-touch__icon {
+    font-size: 2.5rem;
+}
+
+.form__title {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.get-in-touch__form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.form__button {
+    background-color: rgb(86, 128, 23);
+    font-size: 1rem;
+    margin-top: .5rem;
+    padding: .5em;
+    color: white;
+}
+/* get-in-touch section end */
+
+/* footer section start */
+.footer {
+    background-color: grey;
+}
+
+.footer__text {
+    text-align: center;
+}
+/* footer section end */
 
 /* MQ TABLET START */
 @media (min-width: 600px) {
-    body {
-        background-color: pink;
+    .portfolio__project {
+        flex-basis: calc(50% - 1rem);
     }
 }
 /* MQ TABLET ENDS */
 
-
-
 /* MQ LAPTOP START */
 @media (min-width: 992px) {
+    .about-me__content-wrapper {
+        width: 50%;
+        margin: 0 auto;
+    }
 
+    .portfolio {
+        flex-wrap: nowrap;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+    .get-in-touch__text {
+        display: none;
+    }
+
+    .get-in-touch__content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .get-in-touch__form, .get-in-touch__icons-wrapper {
+        flex-basis: 40%;
+    }
+    
+    .form__title {
+        display: none;
+    }
 }
